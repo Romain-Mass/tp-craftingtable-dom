@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url(assets/Minecraft.ttf);
+}
+
+body {
+	margin: 0;
+}
+
+.a {
+	grid-area: a;
+}
+
+.b {
+	grid-area: b;
+}
+.c {
+	grid-area: c;
+}
+.d {
+	grid-area: d;
+}
+.e {
+	grid-area: e;
+}
+.f {
+	grid-area: f;
+}
+.g {
+	grid-area: g;
+}
+.h {
+	grid-area: h;
+}
+.i {
+	grid-area: i;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10px;
+	grid-template-areas:
+		"a b c"
+		"d e f"
+		"g h i";
+	width: 30%;
+	background-color: #D3D3D3;
+	gap: 10px;
+}
+.crafting-table {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 15vw;
+}
+.crafting-slot {
+    background-color: #B2B2B2;
+    box-shadow: 1px #00000066;
+    opacity: 40%;
+}
+.crafting-slot:hover {
+	background-color: #d9d9d9;  
+}
+h1 {
+    font-family: "Minecraft";
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 5vw;
+}
+h3 {
+    font-family: "Minecraft";
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 5vw;
+}
+
+.inventory {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    padding: 10px;
+    margin-left: 10vw;
+    gap: 10px;
+}
