@@ -1,54 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="FR-fr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">
-		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css
+		"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Craftingtable</title>
 	</head>
 	<body>
-		<h1>CraftingTable</h1>
-		<section class="crafting-table">
-			<div class="grid">
-				<img class="a crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="b crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="c crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="d crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="e crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="f crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="g crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="h crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-				<img class="i crafting-slot" src="assets/Rectangle 2.svg" alt="" />
-			</div>
-			<img src="assets/arrow.svg" alt="arrow" />
-			<img src="assets/Rectangle 3 (1).svg" alt="" />
-		</section>
-		<h3>Inventory</h3>
-		<section class="inventory">
-				<img class="iron crafting-slot" src="assets/stick.png" alt="" />
-				<img class="stick crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-				<img class="crafting-slot" src="assets/stick.png" alt="" />
-		</section>
+		<main>
+			<h1>CraftingTable</h1>
+			<section class="crafting">
+				<div class="crafting-table">
+					<button id="1" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="2" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="3" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="4" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="5" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="6" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="7" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="8" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+					<button id="9" class="crafting-btn craft">
+						<img src="./assets/air.webp" alt="air" />
+					</button>
+				</div>
+				<div class="crafting-arrow">
+					<span class="mdi mdi-arrow-right-bold-outline"></span>
+				</div>
+				<button id="output" class="crafting-square">
+					<img id="crafted-item" src="./assets/air.webp" alt="air" />
+				</button>
+			</section>
+			<section class="inventory">
+				<h2>Inventory</h2>
+				<div class="inventory-table">
+					<!--<button class="crafting-btn">
+						<img src="./assets/stick.webp" alt="stick" />
+					</button>
+				-->
+				</div>
+			</section>
+		</main>
+		<script src="./app.js"></script>
 	</body>
 </html>
